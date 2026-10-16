@@ -82,43 +82,43 @@ adaptivty/
         └── resnet1d_pruned_ratio30.pt````
 
 
-## Workflow
+### Workflow
 
 Run the project scripts in the following order:
 
-### ** 1.Preprocess the CAPTURE-24 dataset by running the following commands:**
+## ** 1.Preprocess the CAPTURE-24 dataset by running the following commands:**
 ````
 sbatch send_preprocessing.sh 
 ````
-### ** 2.Train and evaluate the baseline ResNet1D model by running the following commands:**
+## ** 2.Train and evaluate the baseline ResNet1D model by running the following commands:**
 ````
 sbatch send_train_baseline.sh
 ````
 ````
 sbatch send_eval_baseline.sh
 ````
-### ** 3.Apply structured pruning using DepGraph and fine-tune the pruned model by running the following commands:**
+## ** 3.Apply structured pruning using DepGraph and fine-tune the pruned model by running the following commands:**
 ````
 sbatch prune.sh
 ````
 ````
 tba
 ````
-### ** 4.Add and fine-tune the shared-weight early-exit by running the following commands:**
+## ** 4.Add and fine-tune the shared-weight early-exit by running the following commands:**
 ````
 tba
 ````
 ````
 tba
 ````
-### ** 5.Evaluate the adaptive inference policies at low, medium, and high battery levels by running the following commands:**
+## ** 5.Evaluate the adaptive inference policies at low, medium, and high battery levels by running the following commands:**
 ````
 tba
 ````
 ````
 tba
 ````
-### ** 6.Generate all the results tables and accuracy-versus-FLOPs Pareto frontier by running the following commands:**
+## ** 6.Generate all the results tables and accuracy-versus-FLOPs Pareto frontier by running the following commands:**
 ````
 tba
 ````

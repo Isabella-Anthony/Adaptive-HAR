@@ -42,7 +42,7 @@ https://ora.ox.ac.uk/objects/uuid:99d7c092-d865-4a19-b096-cc16440cd001
 ## Filestructure
 
 ````
-adaptivty/
+Adaptive-HAR/
 ├── adaptivity_mechanism/
 │   ├── controller.py
 │   └── inference.py
@@ -64,6 +64,7 @@ adaptivty/
 ├── prune/
 │   ├── prune.py
 │   └── prune.sh
+├── README.md
 ├── training/
 │   ├── send_fit_early_exit.sh
 │   ├── send_train_adaptive.sh

@@ -39,7 +39,7 @@ https://ora.ox.ac.uk/objects/uuid:99d7c092-d865-4a19-b096-cc16440cd001
 ````
 
 
-### Filestructure
+## Filestructure
 
 ````
 adaptivty/
@@ -93,7 +93,7 @@ adaptivty/
         └── resnet1d_pruned_ratio30.pt````
 
 ````
-### End-to-End Workflow
+## End-to-End Workflow
 
 To run the complete project from training until plotting. Please run the scripts in the following order as stated below. If you wish to only evaluate the trained models, please see next section.
 
@@ -133,7 +133,7 @@ sbatch send_eval_adaptivity.sh
 sbatch plot.sh
 ````
 
-### Evaluation Workflow
+## Evaluation Workflow
 
 To evaluate the results from our adaptive solution. Please run the scripts in the following order as stated below.
 

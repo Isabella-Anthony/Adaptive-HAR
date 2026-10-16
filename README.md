@@ -30,6 +30,7 @@ https://ora.ox.ac.uk/objects/uuid:99d7c092-d865-4a19-b096-cc16440cd001
 
 ## Filestructure
 
+````
 adaptivty/
 ├── adaptivity_mechanism/
 │   ├── controller.py
@@ -78,5 +79,4 @@ adaptivty/
     └── pruning_results/
         ├── resnet1d_pruned_ratio30_confusion_matrix.png
         ├── resnet1d_pruned_ratio30_metrics.json
-        └── resnet1d_pruned_ratio30.pt
-  
+        └── resnet1d_pruned_ratio30.pt````

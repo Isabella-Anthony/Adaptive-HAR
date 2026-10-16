@@ -1,0 +1,101 @@
+{
+  "model_name": "early_exit_ratio30_finetuned",
+  "test_samples": 137185,
+  "num_classes": 10,
+  "classes": [
+    "bicycling",
+    "household-chores",
+    "manual-work",
+    "mixed-activity",
+    "sitting",
+    "sleep",
+    "sports",
+    "standing",
+    "vehicle",
+    "walking"
+  ],
+  "model_total_parameters": 1439077,
+  "model_total_size_mb": 5.545596122741699,
+  "static_exit_metrics": {
+    "exit_1": {
+      "accuracy": 0.6653569996719758,
+      "macro_f1": 0.3458178434814084,
+      "balanced_accuracy": 0.3439318525681515,
+      "latency_ms_cpu": 2.0428118854761124,
+      "parameters": 40534,
+      "flops": 20042440,
+      "mflops": 20.04244
+    },
+    "exit_2": {
+      "accuracy": 0.7210700878375915,
+      "macro_f1": 0.3948211476213963,
+      "balanced_accuracy": 0.39630450269271716,
+      "latency_ms_cpu": 4.271077513694763,
+      "parameters": 184185,
+      "flops": 55843140,
+      "mflops": 55.84314
+    },
+    "exit_3": {
+      "accuracy": 0.7661187447607246,
+      "macro_f1": 0.47160789709136086,
+      "balanced_accuracy": 0.46669628119268414,
+      "latency_ms_cpu": 8.679158072918653,
+      "parameters": 1437727,
+      "flops": 170595928,
+      "mflops": 170.595928
+    }
+  },
+  "adaptive_policy_metrics": {
+    "policy_low": {
+      "battery_level": 15,
+      "accuracy": 0.7185552356307177,
+      "macro_f1": 0.39271059048619017,
+      "balanced_accuracy": 0.3935670172565354,
+      "average_mflops": 40.09824345081459,
+      "exit_counts": {
+        "exit_1": 60333,
+        "exit_2": 76852,
+        "exit_3": 0
+      },
+      "exit_percentages": {
+        "exit_1": 43.98,
+        "exit_2": 56.02,
+        "exit_3": 0.0
+      }
+    },
+    "policy_medium": {
+      "battery_level": 45,
+      "accuracy": 0.7515180231074826,
+      "macro_f1": 0.4565612767033004,
+      "balanced_accuracy": 0.4510961263900907,
+      "average_mflops": 86.94000856994569,
+      "exit_counts": {
+        "exit_1": 50757,
+        "exit_2": 33417,
+        "exit_3": 53011
+      },
+      "exit_percentages": {
+        "exit_1": 37.0,
+        "exit_2": 24.36,
+        "exit_3": 38.64
+      }
+    },
+    "policy_high": {
+      "battery_level": 85,
+      "accuracy": 0.7576848780843387,
+      "macro_f1": 0.46139771822612274,
+      "balanced_accuracy": 0.4567562610818786,
+      "average_mflops": 101.4933456419871,
+      "exit_counts": {
+        "exit_1": 28024,
+        "exit_2": 45844,
+        "exit_3": 63317
+      },
+      "exit_percentages": {
+        "exit_1": 20.43,
+        "exit_2": 33.42,
+        "exit_3": 46.15
+      }
+    }
+  }
+}

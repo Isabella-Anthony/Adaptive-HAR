@@ -1,0 +1,25 @@
+{
+  "model": "resnet1d_pruned_ratio30",
+  "test_samples": 137185,
+  "num_classes": 10,
+  "classes": [
+    "bicycling",
+    "household-chores",
+    "manual-work",
+    "mixed-activity",
+    "sitting",
+    "sleep",
+    "sports",
+    "standing",
+    "vehicle",
+    "walking"
+  ],
+  "loss": 0.712220892911468,
+  "accuracy": 76.54772752123046,
+  "macro_f1": 0.47162534400097506,
+  "balanced_accuracy": 0.46321870419895017,
+  "latency_ms_cpu": 9.069386310875416,
+  "parameters": 1437727,
+  "size_mb": 5.5376081466674805,
+  "flops": 170595928
+}

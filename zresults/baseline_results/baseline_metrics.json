@@ -1,0 +1,25 @@
+{
+  "model": "resnet1d_baseline",
+  "test_samples": 137185,
+  "num_classes": 10,
+  "classes": [
+    "bicycling",
+    "household-chores",
+    "manual-work",
+    "mixed-activity",
+    "sitting",
+    "sleep",
+    "sports",
+    "standing",
+    "vehicle",
+    "walking"
+  ],
+  "loss": 0.7979019734686553,
+  "accuracy": 73.26311185625251,
+  "macro_f1": 0.39105528306893494,
+  "balanced_accuracy": 0.39069551742652403,
+  "latency_ms_cpu": 13.690228704363108,
+  "parameters": 2943690,
+  "size_mb": 11.29297924041748,
+  "flops": 350643968
+}

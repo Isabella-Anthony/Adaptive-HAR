@@ -1,5 +1,5 @@
 # Adaptive-HAR
-This project investigates adaptive inference for wearable Human Activity Recognition (HAR) using accelerometer time-series data from the CAPTURE-24 dataset. The objective is to balance predictive performance and computational cost by adapting the amount of computation performed for each inference according to the available battery budget and the difficulty of the input. Instead of using a single fixed depth model for every input, the system combines structured pruning with a shared-weight early-exit architecture. A battery-aware policy determines the maximum permitted inference depth, while confidence thresholds determine whether an input can exit early.
+This project implements adaptive inference for wearable Human Activity Recognition (HAR) using accelerometer time-series data from the CAPTURE-24 dataset. The objective is to balance predictive performance and computational cost by adapting the amount of computation performed for each inference according to the available battery budget and the difficulty of the input. Instead of using a single fixed depth model for every input, the system combines structured pruning with a shared-weight early-exit architecture. A battery-aware policy determines the maximum permitted inference depth, while confidence thresholds determine whether an input can exit early.
 
 ## Main contributions
 

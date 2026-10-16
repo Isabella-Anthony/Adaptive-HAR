@@ -1,6 +1,9 @@
 # Adaptive-HAR
 Adaptive Inference on wearables for human activity recognition. 
 
+Assumptions:
+- Working environment is Das5
+
 ## How to run 
 
 ### **Start by cloning the repo to your local machine**
@@ -16,4 +19,15 @@ source .venv/bin/activate
 ````
 pip install -r requirements.txt
 ````
- 
+
+
+## Dataset
+
+### **Download the CAPTURE-24 dataset, make sure the folder name remains as "capture24"**
+````
+https://ora.ox.ac.uk/objects/uuid:99d7c092-d865-4a19-b096-cc16440cd001
+````
+
+
+
+  

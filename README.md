@@ -1,8 +1,19 @@
 # Adaptive-HAR
-Adaptive Inference on wearables for human activity recognition. 
+This project investigates adaptive inference for wearable Human Activity Recognition (HAR) using accelerometer time-series data from the CAPTURE-24 dataset. The objective is to balance predictive performance and computational cost by adapting the amount of computation performed for each inference according to the available battery budget and the difficulty of the input. Instead of using a single fixed depth model for every input, the system combines structured pruning with a shared-weight early-exit architecture. A battery-aware policy determines the maximum permitted inference depth, while confidence thresholds determine whether an input can exit early.
 
-Assumptions:
+## Main contributions
+
+- A ResNet1D baseline for wearable human activity recognition.
+- Structured channel pruning using DepGraph and magnitude-based importance.
+- A shared-weight early-exit model with three exit points.
+- A battery-aware inference policy with LOW, MEDIUM, and HIGH operating conditions.
+- Evaluation using accuracy, macro F1-score, balanced accuracy, FLOPs, parameter count, model size, and CPU inference latency.
+- Pareto-frontier analysis to compare predictive performance against computational cost.
+
+### Assumptions:
 - Working environment is Das5
+- Using conda as environment manager
+- Navigating into the correct directory before executing a command (example: to run prune.sh you need to be in the prune directory)
 
 ## How to run 
 

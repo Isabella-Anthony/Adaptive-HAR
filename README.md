@@ -81,7 +81,7 @@ adaptivty/
         ├── resnet1d_pruned_ratio30_metrics.json
         └── resnet1d_pruned_ratio30.pt````
 
-
+````
 ### Workflow
 
 Run the project scripts in the following order:

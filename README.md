@@ -104,7 +104,7 @@ sbatch prune.sh
 ````
 tba
 ````
-## ** 4.Add and fine-tune the shared-weight early-exit by running the following commands:
+## 4.Add and fine-tune the shared-weight early-exit by running the following commands:
 ````
 tba
 ````

@@ -6,14 +6,14 @@ This project implements adaptive inference for wearable Human Activity Recogniti
 - A ResNet1D baseline for wearable human activity recognition.
 - Structured channel pruning using DepGraph and magnitude-based importance.
 - A shared-weight early-exit model with three exit points.
-- A battery-aware inference policy with LOW, MEDIUM, and HIGH operating conditions.
-- Evaluation using accuracy, macro F1-score, balanced accuracy, FLOPs, parameter count, model size, and CPU inference latency.
+- A battery aware inference policy with low, medium, and high operating conditions.
+- Evaluation using accuracy, macro F1-score, balanced accuracy, FLOPs, parameter count, model size, and latency.
 - Pareto-frontier analysis to compare predictive performance against computational cost.
 
 ### Assumptions:
 - Working environment is Das5
 - Using conda as environment manager
-- Navigating into the correct directory before executing a command (example: to run prune.sh you need to be in the prune directory)
+- Navigating into the correct directory (example: to run prune.sh you need to be in the prune directory)
 
 ## How to run 
 

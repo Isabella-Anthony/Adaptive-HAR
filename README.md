@@ -93,9 +93,9 @@ adaptivty/
         └── resnet1d_pruned_ratio30.pt````
 
 ````
-### Workflow
+### End-to-End Workflow
 
-Run the project scripts in the following order:
+To run the complete project from training until plotting. Please run the scripts in the following order as stated below. If you wish to only evaluate the trained models, please see next section.
 
 * make sure you are in the directory that the file is located in, otherwise you will run into errors!
 

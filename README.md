@@ -5,7 +5,7 @@ Adaptive Inference on wearables for human activity recognition.
 
 ### **Start by cloning the repo to your local machine**
 ````
-Git clone <<here>
+Git clone https://github.com/Isabella-Anthony/Adaptive-HAR.git
 ````
 ### **Setup your environment**
 ````

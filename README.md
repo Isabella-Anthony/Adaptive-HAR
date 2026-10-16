@@ -128,7 +128,26 @@ sbatch send_fit_early_exit.sh
 ````
 sbatch send_eval_adaptivity.sh
 ````
-### 6.Generate all the results tables and accuracy-versus-FLOPs Pareto frontier by running the following commands:
+### 6.Plot all the results and accuracy-versus-FLOPs Pareto frontier by running the following commands:
+````
+sbatch plot.sh
+````
+
+### Evaluation Workflow
+
+To evaluate the results from our adaptive solution. Please run the scripts in the following order as stated below.
+
+* make sure you are in the directory that the file is located in, otherwise you will run into errors!
+
+### 1.Preprocess the CAPTURE-24 dataset by running the following commands:
+````
+sbatch send_preprocessing.sh 
+````
+### 2.Script to evaluate baseline, pruned, and adaptive model:
+````
+sbatch send_eval_all.sh
+````
+### 3.Plot all the results and accuracy-versus-FLOPs Pareto frontier by running the following commands:
 ````
 sbatch plot.sh
 ````

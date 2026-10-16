@@ -28,6 +28,55 @@ pip install -r requirements.txt
 https://ora.ox.ac.uk/objects/uuid:99d7c092-d865-4a19-b096-cc16440cd001
 ````
 
+## Filestructure
 
-
+adaptivty/
+├── adaptivity_mechanism/
+│   ├── controller.py
+│   └── inference.py
+├── evaluate/
+│   ├── eval_adaptive.py
+│   ├── eval_baseline.py
+│   ├── eval_prune.py
+│   ├── plots/
+│   │   ├── plot_battery_simulation.py
+│   │   ├── plot_pareto.py
+│   │   └── plot.sh
+│   ├── send_eval_adaptivity.sh
+│   ├── send_eval_all.sh
+│   ├── send_eval_baseline.sh
+│   └── send_eval_prune.sh
+├── preprocess/
+│   ├── prepros_das5.py
+│   └── send_preprocessing.sh
+├── prune/
+│   ├── prune.py
+│   └── prune.sh
+├── training/
+│   ├── send_fit_early_exit.sh
+│   ├── send_train_adaptive.sh
+│   ├── send_train_baseline.sh
+│   ├── tfit_early_exit.py
+│   ├── train_adaptive.py
+│   └── train_baseline.py
+├── utility/
+│   ├── early_exit_model.py
+│   ├── loaders.py
+│   ├── model.py
+│   └── utils.py
+└── zresults/
+    ├── baseline_results/
+    │   ├── baseline_confusion_matrix.png
+    │   ├── baseline_metrics.json
+    │   └── resnet1d_baseline_best.pt
+    ├── early_exit_results/
+    │   ├── early_exit_ratio30_best.py
+    │   ├── early_exit_ratio30_finetuned_best.py
+    │   ├── early_exit_ratio30_finetuned_comprehensive_metrics.json
+    │   ├── exit_distribution_breakdown.png
+    │   └── pareto_frontier_with_baseline.png      
+    └── pruning_results/
+        ├── resnet1d_pruned_ratio30_confusion_matrix.png
+        ├── resnet1d_pruned_ratio30_metrics.json
+        └── resnet1d_pruned_ratio30.pt
   

@@ -20,13 +20,13 @@ conda create adaptivity
 pip install -r requirements.txt
 ````
 
-
 ## Dataset
 
 ### Download the CAPTURE-24 dataset, make sure the folder name remains as "capture24"
 ````
 https://ora.ox.ac.uk/objects/uuid:99d7c092-d865-4a19-b096-cc16440cd001
 ````
+
 
 ### Filestructure
 
@@ -86,6 +86,8 @@ adaptivty/
 
 Run the project scripts in the following order:
 
+* make sure you are in the directory that the file is located in, otherwise you will run into errors!
+
 ## 1.Preprocess the CAPTURE-24 dataset by running the following commands:
 ````
 sbatch send_preprocessing.sh 
@@ -97,32 +99,27 @@ sbatch send_train_baseline.sh
 ````
 sbatch send_eval_baseline.sh
 ````
-## 3.Apply structured pruning using DepGraph and fine-tune the pruned model by running the following commands:
+## 3.Apply structured pruning using DepGraph, fine-tune and evaluate the pruned model by running the following commands:
 ````
 sbatch prune.sh
 ````
 ````
-tba
+sbatch send_eval_prune.sh
 ````
 ## 4.Add and fine-tune the shared-weight early-exit by running the following commands:
 ````
-tba
+sbatch send_train_adaptive.sh
 ````
 ````
-tba
+sbatch send_fit_early_exit.sh
 ````
 ## 5.Evaluate the adaptive inference policies at low, medium, and high battery levels by running the following commands:
 ````
-tba
-````
-````
-tba
+sbatch send_eval_adaptivity.sh
 ````
 ## 6.Generate all the results tables and accuracy-versus-FLOPs Pareto frontier by running the following commands:
 ````
-tba
+sbatch plot.sh
 ````
-````
-tba
-````
+
 

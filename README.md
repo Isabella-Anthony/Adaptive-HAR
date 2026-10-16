@@ -10,10 +10,10 @@ Assumptions:
 ````
 Git clone https://github.com/Isabella-Anthony/Adaptive-HAR.git
 ````
-### **Setup your environment**
+### **Setup your environment using conda**
 ````
-python3 -m venv .venv
-source .venv/bin/activate
+source /var/scratch/$USER/miniconda3/etc/profile.d/conda.sh
+conda create adaptivity
 ````
 ### **Download all Requirements**
 ````
